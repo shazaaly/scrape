@@ -1,0 +1,91 @@
+# Playwright Web Scraper Configuration File
+# This is a sample configuration file demonstrating various scraping options
+
+# Target URL(s) to scrape
+url: "https://example.com"
+
+# CSS selectors to extract data from
+# You can specify multiple selectors to extract different types of content
+selectors:
+  - "h1"                    # Main headings
+  - "p"                     # Paragraphs
+  - ".article-title"        # Articles with specific class
+  - "[data-testid='title']" # Elements with specific data attributes
+
+# Browser settings
+headless: true              # Run browser in headless mode
+delay: 1.0                 # Delay between requests (seconds)
+timeout: 30000             # Page load timeout (milliseconds)
+
+# Viewport settings
+viewport:
+  width: 1280
+  height: 720
+
+# User agent (leave empty for automatic rotation)
+user_agent: null
+
+# Scraping limits
+max_pages: 1               # Maximum number of pages to scrape
+
+# Wait for specific selector before scraping
+wait_for_selector: null    # e.g., ".content-loaded" or "h1"
+
+# Export settings
+export_format: "json"      # json, csv, or excel
+output_file: "scraped_data" # Output filename (without extension)
+
+# Advanced browser settings
+javascript_enabled: true   # Enable JavaScript execution
+images_enabled: false      # Load images (set to false to save bandwidth)
+css_enabled: true          # Load CSS files
+follow_redirects: true     # Follow HTTP redirects
+
+# Anti-bot measures
+random_delay: true         # Add random delays to requests
+rotate_user_agent: true    # Rotate user agents between requests
+
+---
+# Example configurations for different use cases
+
+# News website scraping
+news_scraper:
+  url: "https://news.example.com"
+  selectors:
+    - "h1"
+    - "h2"
+    - ".article-title"
+    - ".article-content"
+    - ".byline"
+    - ".publish-date"
+  wait_for_selector: "h1"
+  delay: 2.0
+  max_pages: 10
+
+# E-commerce product scraping
+ecommerce_scraper:
+  url: "https://shop.example.com/products"
+  selectors:
+    - ".product-title"
+    - ".price"
+    - ".description"
+    - ".rating"
+    - ".availability"
+  wait_for_selector: ".product-title"
+  delay: 1.5
+  javascript_enabled: true
+  max_pages: 20
+
+# Social media content scraping
+social_scraper:
+  url: "https://social.example.com"
+  selectors:
+    - ".post-content"
+    - ".username"
+    - ".timestamp"
+    - ".likes-count"
+    - ".comments-count"
+  delay: 3.0
+  headless: false           # Some social media sites require non-headless mode
+  javascript_enabled: true
+  wait_for_selector: ".post-content"
