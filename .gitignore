@@ -1,2 +1,7 @@
 ARCHITECTURE.md
 logs/
+*.log
+*.tmp
+*.bak
+*.swp
+__pycache__/
