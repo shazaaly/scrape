@@ -550,31 +550,7 @@ When reporting issues, please include:
 - [ ] **Machine Learning**: Automatic selector generation using ML
 - [ ] **Real-time Monitoring**: Advanced monitoring and alerting
 
-### Version History
-
-- **v1.0.0**: Initial release with core functionality
-- **v1.1.0**: Web interface and REST API (current)
-- **v1.2.0**: Configuration templates and improved error handling (planned)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Playwright Team**: For the excellent browser automation framework
-- **Flask Team**: For the lightweight web framework
-- **Bootstrap Team**: For the responsive CSS framework
-- **Community Contributors**: Thank you to all contributors who help improve this project
-
-## 📞 Support
-
-- **Issues**: Report bugs and request features on [GitHub Issues](https://github.com/yourusername/playwright-web-scraper/issues)
-- **Discussions**: Join discussions on [GitHub Discussions](https://github.com/yourusername/playwright-web-scraper/discussions)
-- **Wiki**: Check the [project wiki](https://github.com/yourusername/playwright-web-scraper/wiki) for detailed guides
-
----
 
 **Happy Scraping!** 🕷️
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Shaza Aly
