@@ -1,0 +1,85 @@
+2025-08-21 14:29:56,429 - __main__ - INFO - Starting Playwright Scraper Web Interface...
+2025-08-21 14:29:56,440 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.88.194:5000
+2025-08-21 14:29:56,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-21 14:29:58,602 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:29:58] "GET / HTTP/1.1" 200 -
+2025-08-21 14:30:00,017 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:30:00] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-21 14:30:00,224 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:30:00] "GET /static/app.js HTTP/1.1" 200 -
+2025-08-21 14:30:00,471 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:30:00] "GET /api/tasks HTTP/1.1" 200 -
+2025-08-21 14:30:23,398 - werkzeug - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:23] "GET / HTTP/1.1" 200 -
+2025-08-21 14:30:23,435 - werkzeug - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:23] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-21 14:30:23,439 - werkzeug - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:23] "GET /static/app.js HTTP/1.1" 200 -
+2025-08-21 14:30:23,667 - werkzeug - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:23] "GET /api/tasks HTTP/1.1" 200 -
+2025-08-21 14:35:29,163 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:35:29] "GET / HTTP/1.1" 200 -
+2025-08-21 14:35:29,555 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:35:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-21 14:35:30,019 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:35:30] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+2025-08-21 14:35:30,991 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:35:30] "GET /api/tasks HTTP/1.1" 200 -
+2025-08-21 14:43:39,924 - __main__ - INFO - Starting Playwright Scraper Web Interface...
+2025-08-21 14:43:39,930 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.88.194:5000
+2025-08-21 14:43:39,931 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-21 14:43:41,974 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:43:41] "GET / HTTP/1.1" 200 -
+2025-08-21 14:43:42,598 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:43:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-21 14:43:42,822 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:43:42] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+2025-08-21 14:43:44,242 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:43:44] "GET /api/tasks HTTP/1.1" 200 -
+2025-08-21 14:44:03,717 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:03] "GET / HTTP/1.1" 200 -
+2025-08-21 14:44:03,983 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:03] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-21 14:44:04,299 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:04] "GET /static/app.js HTTP/1.1" 200 -
+2025-08-21 14:44:04,696 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:04] "GET /api/tasks HTTP/1.1" 200 -
+2025-08-21 14:44:05,608 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-21 14:44:33,951 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:33] "POST /api/validate-url HTTP/1.1" 200 -
+2025-08-21 14:44:44,996 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:44] "POST /api/scrape HTTP/1.1" 200 -
+2025-08-21 14:44:45,346 - scraper - ERROR - Failed to initialize browser: BrowserType.launch: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libnspr4\                   ║
+║         libnss3\                                     ║
+║         libdbus-1-3\                                 ║
+║         libatk1.0-0t64\                              ║
+║         libatk-bridge2.0-0t64\                       ║
+║         libatspi2.0-0t64\                            ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxfixes3\                                  ║
+║         libgbm1\                                     ║
+║         libxcb1\                                     ║
+║         libxkbcommon0\                               ║
+║         libasound2t64                                ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
+2025-08-21 14:44:45,346 - __main__ - ERROR - Task task_1755787484995 failed: BrowserType.launch: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libnspr4\                   ║
+║         libnss3\                                     ║
+║         libdbus-1-3\                                 ║
+║         libatk1.0-0t64\                              ║
+║         libatk-bridge2.0-0t64\                       ║
+║         libatspi2.0-0t64\                            ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxfixes3\                                  ║
+║         libgbm1\                                     ║
+║         libxcb1\                                     ║
+║         libxkbcommon0\                               ║
+║         libasound2t64                                ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
+2025-08-21 14:44:47,200 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:47] "GET /api/status/task_1755787484995 HTTP/1.1" 200 -
+2025-08-21 14:44:47,403 - werkzeug - INFO - 172.31.88.194 - - [21/Aug/2025 14:44:47] "GET /api/tasks HTTP/1.1" 200 -
