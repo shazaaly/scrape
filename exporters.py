@@ -33,7 +33,7 @@ class DataExporter:
         """
         if not data:
             self.logger.warning("No data to export")
-            return None
+            return ""
         
         # Clean and validate data
         cleaned_data = self.clean_data(data)

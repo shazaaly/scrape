@@ -133,6 +133,8 @@ class PlaywrightScraper:
         Returns:
             List of dictionaries containing scraped data from the page
         """
+        if not self.context:
+            raise RuntimeError("Browser context not initialized")
         page = await self.context.new_page()
         scraped_data = []
         
@@ -289,4 +291,4 @@ class PlaywrightScraper:
             
         except Exception as e:
             self.logger.warning(f"Failed to extract data from element: {str(e)}")
-            return None
+            return {}
